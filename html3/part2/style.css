@@ -1,0 +1,151 @@
+.item {
+    width: 512px;
+    height: 512px;
+    display: inline-block;
+    margin: 10%;
+    background: rgb(33,55,252);
+    background: linear-gradient(180deg, rgba(33,55,252,1) 0%, rgba(33,55,252,1) 46%, rgba(33,55,252,1) 49%, rgba(19,90,155,1) 50%, rgba(255,206,34,1) 50%, rgba(255,206,34,1) 100%);
+}
+
+
+.first-item {
+    padding-top: 3px;
+}
+
+.first-item__content {
+    width: 100%;
+    height: 100%;
+    background-image: url("../part2/img/Glyph.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.circle-item {
+    box-sizing: border-box;
+    width: 512px;
+    height: 512px;
+    border-radius: 50%;
+    /* padding: 65px; */
+    display: inline-block;
+    margin: 10%;
+    background: rgb(33,55,252);
+    background: linear-gradient(180deg, rgba(33,55,252,1) 0%, rgba(33,55,252,1) 46%, rgba(33,55,252,1) 49%, rgba(19,90,155,1) 50%, rgba(255,206,34,1) 50%, rgba(255,206,34,1) 100%);
+}
+
+
+.second-item__content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-image: url("../part2/img/Glyph.png");
+    background-repeat: no-repeat;
+    background-position: 50% 88%;
+}
+
+
+.third-item__content {
+    width: 100%;
+    height: 100%;
+    background-image: url("../part2/img/Group.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.fourth-item__content {
+    width: 100%;
+    height: 100%;
+    background-image: url("../part2/img/Group.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fifth-item__content {
+    width: 100%;
+    height: 100%;
+    background-image: url("../part2/img/Plane.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+}
+
+
+
+.sixth-item__content {
+    width: 100%;
+    height: 100%;
+    background-image: url("../part2/img/Plane.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.seventh-item__content {
+    width: 100%;
+    height: 100%;
+    background-image: url("../part2/img/Vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eighth-item__content {
+    width: 100%;
+    height: 100%;
+    background-image: url("../part2/img/Vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.black {
+    width: 512px;
+    height: 512px;
+    display: inline-block;
+    margin: 10%;
+    background-color: #000000;
+    background-image: url("./img/Vector.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 128px;
+}
+
+.ninth-item__content {
+    border-radius: 7%;
+    width: 100%;
+    height: 100%;
+    background-position: 25px 25px;
+    background-image: url("./img/Flag.png");
+    background-repeat: no-repeat;
+}
+
+.tenth-item__content {
+    border-radius: 7%;
+    width: 100%;
+    height: 100%;
+    background-position: 25px 25px;
+    background-image: url("./img/Flag.png");
+    background-repeat: no-repeat;
+}
+
+.tenth-item__content-inside {
+    border-radius: 7%;
+    width: 100%;
+    height: 100%;
+    background-position: 94% 25px;
+    background-image: url("./img/Flag.png");
+    background-repeat: no-repeat;
+}
+
+.eleventh-item {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.eleventh-item__content {
+    border-radius: 7%;
+    width: 100%;
+    height: 100%;
+    background-position-x: center;
+    background-position-y: 343px;
+    background-image: url("./img/Flag.png");
+    background-repeat: no-repeat;
+}
