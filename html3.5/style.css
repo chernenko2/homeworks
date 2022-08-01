@@ -1,0 +1,16 @@
+
+
+table {
+    border: 4px solid black;
+    border-collapse: collapse
+}
+
+td {
+    border: 4px solid black;
+    width: 170px;
+    height: 35px;
+}
+
+tr {
+    border: 4px solid black;
+}
