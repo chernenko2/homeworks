@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Homework 4</title>
+</head>
+<body>
+    <div id="header" class="header">
+        <a href="#" class="logo"><img src="./img/logo.png" alt="logo"></a>
+
+        <!-- Пробував зробити через список, але без флексів з float виходило весь час криво, і вирішив зробити простими посиланнями -->
+        <!-- <ul class="nav">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">забронювати</a></li>
+            <li><a href="#">контакти</a></li>
+            <li><a href="#">особистий кабінет</a></li>
+        </ul>
+        <a class="globus" href="#"><img src="./img/globus.svg" alt="globus">UA</a> -->
+
+
+
+       <div class="nav"> 
+        <a href="#">Головна</a>
+        <a href="#">Про нас</a>
+        <a href="#">забронювати</a>
+        <a href="#">контакти</a>
+        <a href="#">особистий кабінет</a>
+        </div>
+        <a class="globus" href="#"><img src="./img/globus.svg" alt="globus"></a>
+        <a class="language" href="#">UA</a>
+    </div>
+    <div class="subheader">
+        <a href="#">Забронювати будинок</a>
+    </div>
+    <!-- .wrapper для того щоб задати колір заднього фону -->
+    <div class="wrapper">
+        <div class="main">
+            <div class="row">
+             <div class="row__img">
+                 <img src="./img/1.png" alt="bakota">
+             </div>
+             <div class="row__title">Незвідана Бакота</div>
+             <div class="row__line"></div>
+             <div class="row__description">У Хмельницькій області розташований загублений край -
+                 Бакота. Мальовничий каньйон з давньою історією захоплює
+                 своїми просторами та незвичною атмосферою. Бджільництво,
+                 свіжий мед із польових трав, дотик до природи.</div>
+                 <a href="#" class="row__link">Детальніше</a>
+                 <svg class="star" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z" fill="white"/>
+                     </svg>
+            </div>
+            <div class="row">
+             <div class="row__img">
+                 <img src="./img/1.png" alt="bakota">
+             </div>
+             <div class="row__title">Полонини Карпат</div>
+             <div class="row__line"></div>
+             <div class="row__description">Полонини Карпат, у селі Орів посеред гір
+                розташувався затишний куточок для незабутніх
+                вражень. Справжні українські гори, власноручне
+                сироваріння на полонині, водоспади та
+                вікові дерева чекають на Вас.</div>
+                 <a href="#" class="row__link">Детальніше</a>
+                 <svg class="star" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z" fill="white"/>
+                     </svg>
+            </div>
+            <div class="row">
+             <div class="row__img">
+                 <img src="./img/1.png" alt="bakota">
+             </div>
+             <div class="row__title">Автентична Київщина</div>
+             <div class="row__line"></div>
+             <div class="row__description">Неподалік центра Києва розташувалось автентичне українське село на території однойменного села Пирогово. Дерев’яні млини, запашний хліб, приготовлений своїми руками, українські пісні та багато іншого чекає на вас уже зараз.</div>
+                 <a href="#" class="row__link">Детальніше</a>
+                 <svg class="star" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z" fill="white"/>
+                     </svg>
+            </div>
+            <div class="row">
+             <div class="row__img">
+                 <img src="./img/1.png" alt="bakota">
+             </div>
+             <div class="row__title">Нетипова Одещина</div>
+             <div class="row__line"></div>
+             <div class="row__description">В Одеській області знаходиться мальовниче містечко Вилкове.
+                Його ще називають «українською Венецією». Вилкове - це містечко
+                на воді, весь в каналах. Розташоване в місці, де зустрічаються річка
+                Дунай і Чорне море. Люди пересуваються переважно човнами.
+                Нетипове українське село не залишить Вас без вражень.</div>
+                 <a href="#" class="row__link">Детальніше</a>
+                 <svg class="star" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z" fill="white"/>
+                     </svg>
+            </div>
+         </div>
+    </div>
+    <a href="#header" class="button__up">
+        <svg class="arrow" width="25" height="45" viewBox="0 0 25 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.5 0.857162L0.952994 20.8572H24.047L12.5 0.857162ZM14.5 44.1429L14.5 18.8572H10.5L10.5 44.1429H14.5Z" fill="white"/>
+            </svg>            
+    </a>
+    <div class="footer">© 2021 HolidayTime.  All rights reserved.</div>
+</body>
+</html>
