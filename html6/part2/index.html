@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Homework 6, part 1</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">Intake Main Flow</div>
+            <div class="subtitle"><span>*</span> Mandatory field</div>
+            <div class="information-title section-title">Information</div>
+            <div class="information">
+                <div class="information-wrapper">
+                    <div class="information-row">
+                        <form class="information-form information-form-left information-form-1">
+                            <label for="form1">Intake Type<span>* (select)</span></label>
+                            <select class="input-size arrow" id="form1" required>
+                                <option value="1">Referral</option>
+                                <option value="2">Not referral</option>
+                                <option value="3">Maybe referral</option>
+                                <option value="4">Why not referral</option>
+                                <option value="5">Yes</option>
+                            </select>
+                            </form>
+                        <form class="information-form information-form-2">
+                            <label for="form2">Enrollment Initiation Date jquery</label>
+                            <input class="input-size calendar" id="form2" type="date" value="2021-11-05" readonly>
+                        </form>
+                    </div>
+                    <div class="information-row">
+                        <form class="information-form information-form-left information-form-3">
+                            <label for="phone-input">phone</label>
+                            <input class="input-size" id="phone-input" type="tel">
+                            </form>
+                            <form class="information-form information-form-4">
+                                <label for="form4">Application Category<span>*</span></label>
+                                <select class="input-size arrow" id="form4" required>
+                                    <option value="1">Child Support</option>
+                                    <option value="2">Adult Support</option>
+                                    <option value="3">Cat Support</option>
+                                    <option value="4">Dog Support</option>
+                                    <option value="5">Parrot Support</option>
+                                </select>
+                                </form>
+                    </div>
+                    <div class="information-row">
+                        <form class="information-form information-form-left information-form-5">
+                            <label for="email-input">email</label>
+                            <input class="input-size" id="email-input" type="email">
+                            </form>
+                            <form class="information-form information-form-6">
+                                <label for="form6">Enrollment Submission Date (Optional)</label>
+                                <input class="input-size calendar" id="form6" type="date" value="2021-11-05" readonly>
+                            </form>
+                    </div>
+                    <div class="information-row">
+                        <form class="information-form information-form-left information-form-7">
+                            <label for="form7">Application Registration (Optional)</label>
+                            <select class="input-size arrow" id="form7">
+                                <option value="1"><span class="opt-span">APP0000116</span></option>
+                                <option value="2"><span class="opt-span">APP0000117</span></option>
+                                <option value="3"><span class="opt-span">APP0000118</span></option>
+                                <option value="4"><span class="opt-span">APP0000119</span></option>
+                                <option value="5"><span class="opt-span">APP0000120</span></option>
+                            </select>
+                        </form>
+                        <div class="empty-block information-form"></div>
+                    </div>
+                    <div class="information-row">
+                        <form class="information-form information-form-left information-form-8">
+                            <label for="form8">Additional Information Requested Date (Optional)</label>
+                            <!-- не зміг по замовчуванню зробити дату  2021-13-05-->
+                            <input class="input-size calendar" id="form8" value="2021-13-05" type="date">
+                        </form>
+                        <div class="information-form information-form-9">
+                        <label for="check_box"><input type="checkbox" id="check_box"> <span>Purged</span></label>
+                     </div>
+                    </div>
+                    <div class="information-row">
+                        <form class="information-form information-form-left information-form-10">
+                            <label for="number-input">Remaining Days Before Referral is Purged (Optional)</label>
+                            <input class="input-size" id="number-input" type="number" value="13">
+                            </form>
+                            <form class="information-form information-form-11">
+                                <label for="form11">Exempt from Paternity (Optional) &nbsp (select)</label>
+                                <select class="input-size arrow" id="form11" required>
+                                    <option value="1">No</option>
+                                    <option value="2">Yes</option>
+                                    <option value="3">Maybe</option>
+                                </select>
+                            </form>
+                    </div>
+                    <div class="information-row">
+                        <form class="information-form information-form-left information-form-12">
+                            <label for="form12">Fee Payment Date (Optional)</label>
+                            <!-- не зміг по замовчуванню зробити дату  2021-13-05-->
+                            <input class="input-size calendar" id="form12" value="2021-13-05" type="date"> 
+                        </form>
+                        <form class="information-form information-form-13">
+                            <label for="form13">Enrollment Status (Optional)</label>
+                            <select class="input-size arrow" id="form13" required>
+                                <option value="1">Worklisted</option>
+                                <option value="2">Yes</option>
+                                <option value="3">Maybe</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="information-row">
+                        <div class="information-form information-form-14">
+                            <label for="check_box2"><input type="checkbox" id="check_box2"><span>Application Fee Processed</span></label>
+                         </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+        </header>
+        <section>
+            <div class="section-title parents-title">Maternity Information</div>
+            <div class="parents">
+                <div class="parents-row">
+                    <div class="parents-form parents-form-left information-form">
+                        <label for="check_box3"><input type="checkbox" id="check_box3"><p>Are you requesting child support services for an
+                            unborn child?</p></label>
+                     </div>
+                     <form class="information-form">
+                        <label for="parent-form2">Enrollment Status (Optional)</label>
+                        <select class="input-size arrow" id="parent-form2">
+                            <option value="1">None</option>
+                            <option value="2">Yes</option>
+                            <option value="3">Maybe</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="line"></div>
+            </div>
+        </section>
+        <section>
+            <div class="official">
+                <div class="section-title official-title">Official Use</div>
+                <div class="official-wrapper">
+                    <div class="official-row">
+                        <form class="information-form official-left">
+                            <label for="official-form1">Case Category (select)</label>
+                            <select class="input-size arrow" id="official-form1">
+                                <option value="1">Active IV-A</option>
+                                <option value="2">Active IV-Aa</option>
+                                <option value="3">Active IV-Aaaa</option>
+                            </select>
+                        </form>
+                        <form class="information-form">
+                            <label for="official-form2">IV-D Indicator<span>*</span></label>
+                            <select class="input-size arrow" id="official-form2">
+                                <option value="1">Non-IV-D</option>
+                                <option value="2">Yes</option>
+                                <option value="3">Maybe</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="official-row">
+                        <form class="information-form official-left">
+                            <label for="official-form3">Arrears Only Indicator (Optional)</label>
+                            <select class="input-size arrow text-edit" id="official-form3">
+                                <option value="1"><span>None</span></option>
+                            </select>
+                        </form>
+                        <form class="information-form">
+                            <label for="official-form4">Intergovernmental Case Category (Optional)</label>
+                            <select class="input-size arrow text-edit" id="official-form4">
+                                <option value="1"><span>None</span></option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="official-row">
+                        <form class="information-form official-left">
+                            <label for="official-form5">Assigned County of Ownership (Optional)</label>
+                            <select class="input-size arrow text-edit" id="official-form5">
+                                <option value="1"><span>None</span></option>
+                            </select>
+                        </form>
+                        <form class="information-form">
+                            <label for="official-form6">Intergovernmental Case Type (Optional)</label>
+                            <select class="input-size arrow text-edit" id="official-form6">
+                                <option value="1"><span>None</span></option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="official-row">
+                        <form class="information-form official-left">
+                            <label for="official-form7">Intergovermental Case Status (details)</label>
+                            <select class="input-size arrow text-edit" id="official-form7">
+                                <option value="1"><span>None</span></option>
+                            </select>
+                        </form>
+                        <form class="information-form">
+                            <label for="official-form8">Case Number</label>
+                            <input placeholder="Search Case Number" type="search" class="input-size text-edit search" id="official-form8">
+                        </form>
+                    </div>
+                    <div class="official-row">
+                        <form class="information-form official-left">
+                            <label for="official-form9">Special Handling Indicator for Applicant (Optional)</label>
+                            <select class="input-size arrow text-edit" id="official-form9">
+                                <option value="1"><span>None</span></option>
+                            </select>
+                        </form>
+                        <form class="information-form">
+                            <label for="official-form10">Referral Number</label>
+                            <input placeholder="Search Referral Number" type="search" class="input-size text-edit search" id="official-form10">
+                        </form>
+                    </div>
+                    <div class="official-row">
+                        <form class="information-form official-left">
+                            <label for="official-form11">Special Handling Indicator for Other Parent
+                                (Optional)</label>
+                            <select class="input-size arrow text-edit" id="official-form11">
+                                <option value="1"><span>None</span></option>
+                            </select>
+                        </form>
+                        <form class="information-form">
+                        </form>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="system">
+                <div class="section-title system-title">System Information</div>
+                <div class="system-wrapper">
+                    <div class="system-row">
+                        <form class="information-form information-form-left">
+                            <label for="system-form1">Enrollment Taken by User</label>
+                            <input value="Search Input" type="search" class="input-size search" id="system-form1">
+                        </form>
+                        <form class="information-form">
+                            <label for="system-form2">Intake Supervisor (Optional)</label>
+                            <input placeholder="Search" type="search" class="input-size text-edit search" id="system-form2">
+                        </form>
+                    </div>
+                    <div class="system-row">
+                        <form class="information-form information-form-left">
+                            <label for="system-form3">Worker (Optional)</label>
+                            <input value="Search Input" type="search" class="input-size search" id="system-form3">
+                        </form>
+                        <form class="information-form">
+                            <label for="system-form4">Owner (Optional)</label>
+                            <input value="Rajaneesh Banal" type="search" class="input-size text-edit search" id="system-form4">
+                        </form>
+                    </div>
+                    <div class="line"></div>
+                    <div class="system-button">
+                        <a href="#" class="system-link">Next</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

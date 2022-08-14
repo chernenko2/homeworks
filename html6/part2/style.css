@@ -1,0 +1,263 @@
+body {
+    color: #171717;
+    font-family: 'Public Sans', sans-serif;
+    background-color: #E5E5E5;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+
+
+label span {
+    color: red;
+}
+
+.arrow {
+    appearance: none;
+    overflow: hidden;
+    background: url('../part2/img/arrow-down-s-line.svg') no-repeat right;
+    background-position: 97% 50%;
+}
+
+.calendar  {
+    appearance: none;
+    overflow: hidden;
+    background: url('../part2/img/Group.svg') no-repeat right;
+    background-position: 97% 50%;
+    box-sizing: border-box;
+}
+
+#form2, #form6 {
+    background-color: #E5E5E5;
+    color: #747474;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container  {
+    min-width: 700px;
+    max-width: 1000px;
+    padding: 65px 44px 110px;
+    margin: 0px auto;
+    background-color: #F9F9F9;
+    box-sizing: border-box;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.subtitle {
+    padding-top: 80px;
+    font-size: 14px;
+}
+
+.subtitle span {
+    color: red;
+}
+
+.information-title {
+    padding-top: 25px;
+}
+
+.information-wrapper {
+    display: flex;
+    flex: 1 1 100%;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.information-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    flex: 1 1 100%;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+.information-form {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+}
+
+.information-form-left {
+    padding-right: 30px;
+}
+
+
+.input-size {
+    margin-top: 8px;
+    /* max-width: 306px; */
+    max-width: 392px;
+    font-size: 16px;
+    padding: 9px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    min-height: 41px;
+}
+
+
+
+#form7  {
+    color: #0050D8;
+}
+
+#check_box, #check_box2, #check_box3 {
+    transform: scale(1.7);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.information-form-9 {
+    justify-content: center;
+}
+
+.information-form-9 label {
+    padding-top: 17px;
+}
+
+.information-form-9 label span {
+    color: #171717;
+    padding-left: 5px;
+}
+
+.information-form-14 label span {
+    padding-left: 9px;
+    color: #171717;
+}
+
+.line {
+    background-color: #D1D1D1;
+    height: 1px;
+    display: flex;
+    flex: 0 1 863px;
+    box-sizing: border-box;
+    margin-top: 32px;
+}
+
+
+.parents-title {
+    margin-top: 32px;
+}
+
+.parents {
+    display: flex;
+    flex: 1 1 100%;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.parents-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    flex: 1 1 100%;
+}
+
+.parents-form-left {
+    padding-right: 30px;
+}
+
+
+.parents-form label {
+    color: #171717;
+    /* padding-left: 15px; */
+    display: flex;
+}
+
+.parents-form label p{
+    color: #171717;
+    padding-left: 10px;
+    display: flex;
+}
+
+.official-title {
+    margin: 32px 0px 12px 0px;
+}
+
+.official-wrapper {
+    display: flex;
+    flex: 1 1 100%;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.official-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    flex: 1 1 100%;
+    padding-top: 20px;
+    align-items: flex-end;
+}
+
+.official-left {
+    padding-right: 30px;
+}
+
+.text-edit {
+    color: #747474;
+}
+
+.search {
+    appearance: none;
+    overflow: hidden;
+    background: url('../part2/img/search-line.svg') no-repeat right;
+    background-position: 97% 50%;
+}
+
+.system {
+    padding-top: 32px;
+}
+
+.system-wrapper {
+    display: flex;
+    flex: 1 1 100%;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+.system-wrapper .line {
+    margin-top: 40px;
+}
+.system-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    flex: 1 1 100%;
+    padding-top: 20px;
+    align-items: flex-end;
+}
+
+#system-form4 {
+    color: #0050D8;
+}
+
+.system-button {
+    display: flex;
+    flex: 0 1 863px;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* margin-right: 45px; */
+    padding-top: 15px;
+}
+
+.system-link {
+    padding: 9px 16px;
+    background-color: #0050D8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
