@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>CPO Registaration</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-empty"></div>
+            <ul class="header-nav">
+                <li class="header__item"><a href="#" class="header__link"><img src="../img/icons/header/home.svg" alt="home"></a></li>
+                <li class="header__item header__item-users"><a href="#" class="header__link header__link-users"><img src="../img/icons/header/users.svg" alt="users"></a><a href="#">Users</a></li>
+                <li class="header__item"><a href="#" class="header__link"><img src="../img/icons/header/notifications.svg" alt="notification"></a></li>
+                <li class="header__item"><a href="#" class="header__link"><img src="../img/icons/header/logout.svg" alt="logout"></a></li>
+            </ul>
+        </header>
+        <div class="refresh-button">
+            <a href="#">Refresh Configuration</a>
+            <a href="#"><img src="../img/icons/refresh.svg" alt="refresh"></a>
+        </div>
+        <div class="main">
+            <div class="main-nav">
+                <ul class="main-menu">
+                    <li class="main-item"><a href="#" class="main-link">Dashboard</a></li>
+                    <li class="main-item"><a href="../charging-sessions/index.html" class="main-link">Charging Sessions</a></li>
+                    <li class="main-item"><a href="#" class="main-link">Billing and Payment</a></li>
+                    <li class="main-item"><a href="../user-management/index.html" class="main-link">User Management</a></li>
+                    <li class="main-item"><a href="../cpo-registration/index.html" class="main-link">CPO Registration</a></li>
+                    <li class="main-item"><a href="#" class="main-link">Reports and Analytics</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="main-buttons">
+                    <div class="main-add">
+                        <a href="#">Add CPO</a>
+                    </div>
+                    <div class="main-change">
+                        <a href="#" class="main-delete">Delete</a>
+                        <a href="#" class="main-save">Save</a>
+                    </div>
+                </div>
+                <div class="main-forms">
+                    <div class="main-row">
+                        <form class="main-form">
+                            <label for="form-name">Name</label>
+                            <input placeholder="Cero Mobility" id="form-name" type="text">
+                        </form>
+                    </div>
+                    <div class="main-row">
+                        <form class="main-form">
+                            <label for="form-address">Address</label>
+                            <input value="305, SBR Surya Pearl, Huda Techno Enclave, Hitech City, Hyderabad" id="form-address" type="text">
+                        </form>
+                    </div>
+                    <div class="main-row">
+                        <form class="main-form">
+                            <label for="form-url">URL*</label>
+                            <input placeholder="0" id="form-url" type="url">
+                        </form>
+                    </div>
+                    <div class="main-row">
+                        <form class="main-form">
+                            <label for="form-code-country">Country Code</label>
+                            <input placeholder="0" id="form-code-country" type="text">
+                        </form>
+                        <form class="main-form">
+                            <label for="form-party">Party ID</label>
+                            <input id="form-party" type="text">
+                        </form>
+                    </div>
+                    <div class="main-row">
+                        <form class="main-form">
+                            <label for="form-token">Local Token</label>
+                                <div class="generate">
+                                    <input placeholder="16" id="form-token" type="text">
+                                    <a href="#">Generate Token</a>
+                                </div>
+                        </form>
+                    </div>
+                    <div class="main-row">
+                        <form action="" class="main-form">
+                            <label for="remote-token">Remote Token</label>
+                            <input placeholder="0" id="remote-token" type="text">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="signature">(C) CLOUDASCEND</div>
+    </div>
+</body>
+</html>
