@@ -189,6 +189,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     transition: all 1s ease-out;
 }
 
@@ -528,6 +529,110 @@ body {
     }
 
     25% {
+        transform: translateX(100%);
+
+    }
+
+    50% {
+
+        transform: translate(100%, 100%);
+    }
+
+    75% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes service-animation-second {
+
+    from,
+    to {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateY(-100%);
+
+    }
+
+    50% {
+        transform: translate(100%, -100%)
+    }
+
+    75% {
+        transform: translate(100%, 0px)
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes service-animation-third {
+
+    from,
+    to {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(100%);
+
+    }
+
+    50% {
+        transform: translate(-100%, 100%)
+    }
+
+    75% {
+        transform: translate(-100%, 0px)
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes service-animation-fourth {
+
+    from,
+    to {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+
+    }
+
+    50% {
+        transform: translate(-100%, -100%)
+    }
+
+    75% {
+        transform: translate(0px, -100%)
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* @keyframes service-animation-first {
+
+    from,
+    to {
+        transform: translateX(0px);
+    }
+
+    25% {
         transform: translateX(300px);
 
     }
@@ -621,5 +726,300 @@ body {
 
     100% {
         transform: translateX(0px);
+    }
+} */
+
+/* Можливо трішки не правильно зрозумів ТЗ, в ТЗ було сказано якщо більше ніж 1620 px то мають бути бокові відступи, що я і зробив, хоча не впевнений що в меню вони повинні бути */
+@media screen and (min-width: 1620px) {
+    .wrapper {
+        width: 1620px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .nav {
+        max-width: 1620px
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav {
+        max-height: 70px;
+    }
+    .logo {
+        flex: 0 1 140px;
+        min-width: none;
+    } 
+    .menu-item {
+        padding-bottom: 5px;
+    }
+    .menu-link {
+        font-size: 20px;
+    }
+
+    .header-gallery {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100px;
+        max-width: 750px;
+    }
+
+    .header-column img{
+        max-height: 300px;
+    }
+    .header-left-column {
+        order: 1;
+        animation-duration: 2s;
+    }
+
+    .header-cl-column {
+        order: 3;
+        max-width: 45%;
+        animation-duration: 3s;
+    }
+
+    .header-cr-column {
+        order: 4;
+        max-width: 45%;
+        animation-duration: 3s;
+    }
+    .header-right-column {
+        order: 2;
+        animation-duration: 2s;
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .service__round {
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .service__background {
+        order: 1;
+    }
+
+    .service__title {
+        font-size: 25px;
+    }
+    .team__row {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        height: 900px;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .team__row:hover a {
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+    .team__item {
+        min-width: 250px;
+        margin: 0px 0px 15px 0px;
+        height: 45%;
+    }
+
+    .team__item span{
+        font-size: 30px;
+        padding: 25px;
+    }
+
+    .contact {
+        order: 2;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-title {
+        font-size: 28px;
+        margin: 0px;
+    }
+    .first-form input {
+        width: auto;
+    }
+
+    .contact__content {
+        padding: 25px 0px;
+    }
+
+    .footer__about {
+        order: 1;
+        padding: 25px 0px;
+    }
+
+    .contact__map {
+        margin-bottom: 35px;
+    }
+    @keyframes first-animation {
+
+        from,
+        to {
+            transform: translateX(-100vw);
+            opacity: 0%;
+        }
+    
+        50% {
+            opacity: 50%;
+        }
+    
+    
+        100% {
+            transform: translateX(0px);
+            opacity: 100%;
+        }
+    
+    }
+    
+    @keyframes second-animation {
+    
+        from,
+        to {
+            transform: translateX(100vw);
+            opacity: 0%;
+        }
+    
+        50% {
+            opacity: 50%;
+        }
+    
+        100% {
+            transform: translateX(0px);
+            opacity: 100%;
+        }
+    }
+
+
+    @keyframes third-animation {
+
+        from,
+        to {
+            transform: translateX(-100vw);
+            opacity: 0%;
+        }
+    
+        50% {
+            opacity: 50%;
+        }
+    
+        100% {
+            transform: translateX(0vw);
+            opacity: 100%;
+        }
+    }
+    @keyframes fourth-animation {
+
+        from,
+    to {
+        transform: translateX(100vw);
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* .wrapper {
+        width: 100%;
+    } */
+    .nav {
+        min-height: none;
+    }
+
+    .logo {
+        min-width: 117px
+    }
+    .menu-link {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .header-gallery {
+        flex-direction: column;
+    }
+    .header-column {
+        max-width: 300px;
+    }
+
+    .header-column img {
+        width: 100%;
+    }
+
+    .header-right-column {
+        order: 4;
+    }
+
+    .service__background {
+        display: none;
+    }
+
+    .service__item{
+        width: 235px;
+    }
+
+    .team__title {
+        font-size: 30px;
+    }
+
+    .team__row {
+        width: auto;
+        height: auto;
+        padding-bottom: 35px;
+    }
+
+    .team__item {
+        min-height: 400px;
+    }
+    .team__item:hover span {
+        opacity: 0%;
+    }
+    .team__item:active span {
+        opacity: 100%;
+    }
+
+    .footer {
+        padding: 0px 15px;
+    }
+
+    .footer__subtitle {
+        font-size: 18px;
+    }
+    .footer__about {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 400px;
+        padding: 0px;
+    }
+
+    .footer-first-column  {
+        order: 3;
+        margin-bottom: 25px;
+    }
+    .contact {
+        order: 1;
+    }
+
+    .contact-title {
+        font-size: 26px;
+    }
+    .contact__content {
+        padding-top: 0px;
+        order: 2;
     }
 }
