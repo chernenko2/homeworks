@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Homework 10</title>
+</head>
+<body>
+    <header class="header">
+          <nav class="navbar navbar-expand-lg navbar-light bg-$white header-nav">
+            <div class="container justify-content-md-between">
+              <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"><span>Макдональдз</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <form class="search-form d-flex col-lg-5 offset-lg-1">
+                    <input class="search-input form-control me-2" type="search" placeholder="Вкажіть Ваше місто..." aria-label="Search">
+                  </form>
+                <ul class="header-buttons navbar-nav me-auto mb-2 mb-lg-0 offset-lg-2 flex-row justify-content-center justify-content-md-start">
+                    <li class="nav-item">
+                        <a class="sign-in" href="#">Увійти</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="basket" href="#">Кошик</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <section>
+            <div class="main-title">
+                <div class="container">
+                    <div class="title">Макдональдз</div>
+                </div>
+            </div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+                <div class="main-wrapper d-inline-block col-12 col-xl-7 align-top">
+                    <div class="main-menu">
+                        <nav class="main-menu-wrapper navbar navbar-expand-sm navbar-light bg-#ECECEC">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 main-list align-items-center">
+                                        <li class="nav-item main-item">
+                                            <a class="nav-link" href="#">Акції</a>
+                                        </li>
+                                        <li class="nav-item main-item">
+                                            <a class="nav-link" href="#">Бургери</a>
+                                        </li>
+                                        <li class="nav-item main-item">
+                                            <a class="nav-link" href="#">Курка</a>
+                                        </li>
+                                        <li class="nav-item main-item">
+                                            <a class="nav-link" href="#">Десерти</a>
+                                        </li>
+                                        <li class="nav-item main-item">
+                                            <a class="nav-link" href="#">Напої</a>
+                                        </li>
+                                        <li class="nav-item main-item">
+                                            <a class="nav-link" href="#">Соуси</a>
+                                        </li>
+                                    </ul>                            
+                                </div>
+                        </nav>
+                    </div>
+                    <div class="action">
+                        <div class="main-subtitle p-3">Бургери</div>
+                    <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/big-tasty.png" class="card-img-top" alt="Tasty">
+                                <div class="card-body">
+                                    <h5 class="card-title">Біг Тейсті</h5>
+                                    <p class="card-text">Сендвіч с великим, рубленим
+                                    біфштексом</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">80 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/roll.png" class="card-img-top" alt="Roly">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ролли</h5>
+                                    <p class="card-text">Свіжі ролли, 3 штуки. Закручений
+                                    зі смаком!</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">110 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/bigmak.png" class="card-img-top" alt="Mak">
+                                <div class="card-body">
+                                    <h5 class="card-title">Біг Мак меню</h5>
+                                    <p class="card-text">Біг мак, середня картопля, кола</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">140 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/big-tasty.png" class="card-img-top" alt="Tasty">
+                                <div class="card-body">
+                                    <h5 class="card-title">Біг Тейсті</h5>
+                                    <p class="card-text">Сендвіч с великим, рубленим
+                                    біфштексом</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">80 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/roll.png" class="card-img-top" alt="Roly">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ролли</h5>
+                                    <p class="card-text">Свіжі ролли, 3 штуки. Закручений
+                                    зі смаком!</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">110 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/bigmak.png" class="card-img-top" alt="Mak">
+                                <div class="card-body">
+                                    <h5 class="card-title">Біг Мак меню</h5>
+                                    <p class="card-text">Біг мак, середня картопля, кола</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">140 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="burger-list">
+                        <div class="main-subtitle p-3">Акції</div>
+                    <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/big-tasty.png" class="card-img-top" alt="Tasty">
+                                <div class="card-body">
+                                    <h5 class="card-title">Біг Тейсті</h5>
+                                    <p class="card-text">Сендвіч с великим, рубленим
+                                    біфштексом</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">80 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/roll.png" class="card-img-top" alt="Roly">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ролли</h5>
+                                    <p class="card-text">Свіжі ролли, 3 штуки. Закручений
+                                    зі смаком!</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">110 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/bigmak.png" class="card-img-top" alt="Mak">
+                                <div class="card-body">
+                                    <h5 class="card-title">Біг Мак меню</h5>
+                                    <p class="card-text">Біг мак, середня картопля, кола</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">140 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/big-tasty.png" class="card-img-top" alt="Tasty">
+                                <div class="card-body">
+                                    <h5 class="card-title">Біг Тейсті</h5>
+                                    <p class="card-text">Сендвіч с великим, рубленим
+                                    біфштексом</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">80 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/roll.png" class="card-img-top" alt="Roly">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ролли</h5>
+                                    <p class="card-text">Свіжі ролли, 3 штуки. Закручений
+                                    зі смаком!</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">110 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/bigmak.png" class="card-img-top" alt="Mak">
+                                <div class="card-body">
+                                    <h5 class="card-title">Біг Мак меню</h5>
+                                    <p class="card-text">Біг мак, середня картопля, кола</p>
+                                </div>
+                                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                    <div class="price">140 грн.</div>
+                                    <div class="order">
+                                        <a href="#">В корзину</a>
+                                    </div>
+                                    <div class="heart">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                                stroke="black" stroke-width="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="chicken">
+                    <div class="main-subtitle p-3">Курка</div>
+                <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/big-tasty.png" class="card-img-top" alt="Tasty">
+                            <div class="card-body">
+                                <h5 class="card-title">Біг Тейсті</h5>
+                                <p class="card-text">Сендвіч с великим, рубленим
+                                біфштексом</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                <div class="price">80 грн.</div>
+                                <div class="order">
+                                    <a href="#">В корзину</a>
+                                </div>
+                                <div class="heart">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                            stroke="black" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/roll.png" class="card-img-top" alt="Roly">
+                            <div class="card-body">
+                                <h5 class="card-title">Ролли</h5>
+                                <p class="card-text">Свіжі ролли, 3 штуки. Закручений
+                                зі смаком!</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                <div class="price">110 грн.</div>
+                                <div class="order">
+                                    <a href="#">В корзину</a>
+                                </div>
+                                <div class="heart">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                            stroke="black" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/bigmak.png" class="card-img-top" alt="Mak">
+                            <div class="card-body">
+                                <h5 class="card-title">Біг Мак меню</h5>
+                                <p class="card-text">Біг мак, середня картопля, кола</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                <div class="price">140 грн.</div>
+                                <div class="order">
+                                    <a href="#">В корзину</a>
+                                </div>
+                                <div class="heart">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                            stroke="black" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/big-tasty.png" class="card-img-top" alt="Tasty">
+                            <div class="card-body">
+                                <h5 class="card-title">Біг Тейсті</h5>
+                                <p class="card-text">Сендвіч с великим, рубленим
+                                біфштексом</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                <div class="price">80 грн.</div>
+                                <div class="order">
+                                    <a href="#">В корзину</a>
+                                </div>
+                                <div class="heart">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                            stroke="black" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/roll.png" class="card-img-top" alt="Roly">
+                            <div class="card-body">
+                                <h5 class="card-title">Ролли</h5>
+                                <p class="card-text">Свіжі ролли, 3 штуки. Закручений
+                                зі смаком!</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                <div class="price">110 грн.</div>
+                                <div class="order">
+                                    <a href="#">В корзину</a>
+                                </div>
+                                <div class="heart">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                            stroke="black" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/bigmak.png" class="card-img-top" alt="Mak">
+                            <div class="card-body">
+                                <h5 class="card-title">Біг Мак меню</h5>
+                                <p class="card-text">Біг мак, середня картопля, кола</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                                <div class="price">140 грн.</div>
+                                <div class="order">
+                                    <a href="#">В корзину</a>
+                                </div>
+                                <div class="heart">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.0118 20.6669C12.009 20.6686 12.0062 20.6702 12.0033 20.6719C11.9999 20.6699 11.9964 20.6678 11.993 20.6658C11.6741 20.4774 11.2161 20.1999 10.6654 19.8462C9.56206 19.1376 8.09621 18.1297 6.63532 16.9279C5.1695 15.722 3.73847 14.3451 2.68148 12.9034C1.61629 11.4504 1 10.026 1 8.70412C1 5.6511 3.47496 3.1761 6.52802 3.1761V3.17613L6.53582 3.17607C8.40135 3.16152 10.1454 4.09983 11.1613 5.6646L11.9951 6.94902L12.8359 5.66908C13.8602 4.10949 15.6024 3.17199 17.4683 3.17609C20.5165 3.1916 22.9839 5.65853 23 8.7066C22.9992 10.0546 22.3805 11.4911 21.3177 12.945C20.2615 14.3899 18.8315 15.763 17.3666 16.9623C15.9065 18.1576 14.4414 19.1562 13.3386 19.8571C12.7882 20.207 12.3305 20.4811 12.0118 20.6669Z"
+                                            stroke="black" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+                <div class="main-subtitle p-3">
+                    Про партнера
+                </div>
+                <div class="shop__info bg-white m-3">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="box__info mb-3">
+                                <div class="box__title mb-1">Робочі дні</div>
+                                <div class="box__text">Пн, вт, ср, чт, пт, сб, вс</div>
+                            </div>
+                            <div class="box__info mb-3">
+                                <div class="box__title mb-1">Час прийому замовлень</div>
+                                <div class="box__text">З 09:00 до 23:00</div>
+                            </div>
+                            <div class="box__info mb-3">
+                                <div class="box__title mb-1">Адреса</div>
+                                <div class="box__text">02140, м.Київ, ВУЛИЦЯ ГРИШКА, будинок 7</div>
+                            </div>
+                            <div class="box__info mb-3">
+                                <div class="box__title mb-1">Юридична інформація</div>
+                                <div class="box__text">ПІІ "МАКДОНАЛЬДЗ ЮКРЕЙН ЛТД"
+                                ЄДРПОУ 23744453</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="up m-3">
+                    <a href="#">
+                        <img src="./img/Arrow 1.png" alt="Arrow">
+                    </a> 
+                </div>
+                </div>
+                <div class="page__order d-inline-block col-12 col-xl-4 mt-3 mb-5">
+                    <div class="order__title">
+                        Ваше замовлення:
+                    </div>
+                    <div class="order__table">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col d-flex justify-content-center">
+                                    <div>
+                                        <div class="menu__title">Біг Мак меню</div>
+                                        <ul class="menu__text">
+                                            <li>Картопля фрі</li>
+                                            <li>Біг Мак</li>
+                                            <li>Кола</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <div class="menu__center">
+                                        <a class="plus d-inline-block calculate" href="#">+</a>
+                                        <div class="amount d-inline-block">1</div>
+                                        <a class="minus d-inline-block calculate" href="#">-</a>
+                                    </div>
+                                </div>
+                                <div class="bold-text col d-flex justify-content-center">
+                                    120 ₴
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="bold-text col d-flex justify-content-center">
+                                    Доставка
+                                </div>
+                                <div class="col"></div>
+                                <div class="bold-text col d-flex justify-content-center">
+                                    50 ₴
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="order__button col d-flex justify-content-between" href="#"><span>Замовити</span> <span>410₴</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-md-center">
+             <ul class="footer-list footer-list-about d-flex flex-column flex-md-row">
+                 <li><a href="#">Про нас</a></li>
+                 <li><a href="#">Контакти</a></li>
+                 <li><a href="#">Партнери</a></li>
+             </ul>
+             <ul class="footer-list footer-list-social d-flex flex-column flex-md-row justify-content-sm-between align-items-md-start">
+                 <li><a href="#"><img src="./img/telegramm.png" alt="telegramm"></a></li>
+                 <li><a href="#"><img src="./img/facebook.png" alt="facebook"></a></li>
+                 <li><a href="#"><img src="./img/instagramm.png" alt="instagramm"></a></li>
+             </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
